@@ -1,0 +1,462 @@
+{
+  "grade_band": "5-6",
+  "subject": "Math",
+  "topics": [
+    "Fundamental Counting Principle",
+    "Basic Probability",
+    "Factors and Multiples",
+    "Fractions (operations)"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": "easy",
+      "topic": "Fundamental Counting Principle",
+      "question": "A student can choose 3 shirts and 2 pairs of pants for school. How many different outfits can the student make?",
+      "options": ["5", "6", "8", "9"],
+      "answer": "6",
+      "explanation": "Multiply the choices: 3 shirts × 2 pants = 6 outfits."
+    },
+    {
+      "id": 2,
+      "difficulty": "easy",
+      "topic": "Basic Probability",
+      "question": "A bag has 4 red marbles and 6 blue marbles. What is the probability of picking a red marble?",
+      "options": ["1/10", "2/5", "3/5", "4/5"],
+      "answer": "2/5",
+      "explanation": "There are 10 marbles total, and 4 are red. So the probability is 4/10 = 2/5."
+    },
+    {
+      "id": 3,
+      "difficulty": "easy",
+      "topic": "Factors and Multiples",
+      "question": "Which number is a factor of 24?",
+      "options": ["5", "7", "8", "11"],
+      "answer": "8",
+      "explanation": "A factor divides evenly into the number. Since 24 ÷ 8 = 3, 8 is a factor of 24."
+    },
+    {
+      "id": 4,
+      "difficulty": "easy",
+      "topic": "Fractions (operations)",
+      "question": "What is 1/4 + 2/4?",
+      "options": ["3/4", "3/8", "1/2", "2/8"],
+      "answer": "3/4",
+      "explanation": "The denominators are the same, so add the numerators: 1 + 2 = 3."
+    },
+    {
+      "id": 5,
+      "difficulty": "medium",
+      "topic": "Fundamental Counting Principle",
+      "question": "At an ice cream shop, you can choose 4 flavors and 3 cone types. How many different single-scoop cones are possible?",
+      "options": ["7", "10", "12", "14"],
+      "answer": "12",
+      "explanation": "Use multiplication: 4 flavors × 3 cone types = 12 combinations."
+    },
+    {
+      "id": 6,
+      "difficulty": "easy",
+      "topic": "Basic Probability",
+      "question": "A fair coin is flipped once. What is the probability of getting heads?",
+      "options": ["0", "1/4", "1/2", "1"],
+      "answer": "1/2",
+      "explanation": "A fair coin has 2 equally likely outcomes, and 1 of them is heads."
+    },
+    {
+      "id": 7,
+      "difficulty": "medium",
+      "topic": "Factors and Multiples",
+      "question": "Which list shows all the factors of 18?",
+      "options": ["1, 2, 3, 6, 9, 18", "1, 2, 4, 9, 18", "1, 3, 6, 12, 18", "2, 3, 6, 9"],
+      "answer": "1, 2, 3, 6, 9, 18",
+      "explanation": "These are all the whole numbers that divide 18 evenly."
+    },
+    {
+      "id": 8,
+      "difficulty": "medium",
+      "topic": "Fractions (operations)",
+      "question": "What is 5/6 - 1/6?",
+      "options": ["4/6", "4/12", "5/12", "2/3"],
+      "answer": "4/6",
+      "explanation": "Subtract the numerators because the denominators are the same: 5/6 - 1/6 = 4/6."
+    },
+    {
+      "id": 9,
+      "difficulty": "medium",
+      "topic": "Fundamental Counting Principle",
+      "question": "A lunch menu offers 2 sandwiches, 3 drinks, and 2 fruits. How many different lunches can be made by choosing one of each?",
+      "options": ["7", "10", "12", "14"],
+      "answer": "12",
+      "explanation": "Multiply the choices: 2 × 3 × 2 = 12 lunches."
+    },
+    {
+      "id": 10,
+      "difficulty": "medium",
+      "topic": "Basic Probability",
+      "question": "A spinner has 8 equal sections. 3 are green, 2 are yellow, and 3 are purple. What is the probability of landing on yellow?",
+      "options": ["1/4", "2/3", "3/8", "1/8"],
+      "answer": "1/4",
+      "explanation": "Yellow appears in 2 of the 8 equal sections, so the probability is 2/8 = 1/4."
+    },
+    {
+      "id": 11,
+      "difficulty": "easy",
+      "topic": "Factors and Multiples",
+      "question": "What is the least common multiple of 2 and 3?",
+      "options": ["5", "6", "8", "9"],
+      "answer": "6",
+      "explanation": "The first number that is a multiple of both 2 and 3 is 6."
+    },
+    {
+      "id": 12,
+      "difficulty": "medium",
+      "topic": "Fractions (operations)",
+      "question": "What is 2/3 + 1/6?",
+      "options": ["3/9", "5/6", "3/6", "1"],
+      "answer": "5/6",
+      "explanation": "Change 2/3 to 4/6, then add: 4/6 + 1/6 = 5/6."
+    },
+    {
+      "id": 13,
+      "difficulty": "hard",
+      "topic": "Fundamental Counting Principle",
+      "question": "A locker code uses 1 letter from 5 choices followed by 2 digits, each from 4 choices. How many different codes are possible?",
+      "options": ["20", "40", "80", "160"],
+      "answer": "80",
+      "explanation": "Multiply each choice: 5 × 4 × 4 = 80 possible codes."
+    },
+    {
+      "id": 14,
+      "difficulty": "medium",
+      "topic": "Basic Probability",
+      "question": "A jar contains 5 orange candies, 3 lemon candies, and 2 grape candies. What is the probability of choosing a lemon candy?",
+      "options": ["1/5", "3/10", "1/2", "2/5"],
+      "answer": "3/10",
+      "explanation": "There are 10 candies in all, and 3 are lemon."
+    },
+    {
+      "id": 15,
+      "difficulty": "medium",
+      "topic": "Factors and Multiples",
+      "question": "Which number is a common multiple of 4 and 6?",
+      "options": ["8", "10", "12", "18"],
+      "answer": "12",
+      "explanation": "A common multiple is a number both 4 and 6 divide evenly into. 12 works for both."
+    },
+    {
+      "id": 16,
+      "difficulty": "medium",
+      "topic": "Fractions (operations)",
+      "question": "A recipe uses 3/8 cup of sugar in the batter and 1/8 cup in the frosting. How much sugar is used altogether?",
+      "options": ["4/8 cup", "3/16 cup", "1/2 cup", "5/8 cup"],
+      "answer": "4/8 cup",
+      "explanation": "Add the fractions with the same denominator: 3/8 + 1/8 = 4/8."
+    },
+    {
+      "id": 17,
+      "difficulty": "easy",
+      "topic": "Fundamental Counting Principle",
+      "question": "You have 2 hats and 5 scarves. How many hat-and-scarf combinations can you wear?",
+      "options": ["7", "10", "12", "15"],
+      "answer": "10",
+      "explanation": "Multiply the choices: 2 × 5 = 10 combinations."
+    },
+    {
+      "id": 18,
+      "difficulty": "easy",
+      "topic": "Basic Probability",
+      "question": "A die has 6 equal sides numbered 1 to 6. What is the probability of rolling a 4?",
+      "options": ["1/3", "1/6", "1/2", "4/6"],
+      "answer": "1/6",
+      "explanation": "There is 1 favorable outcome out of 6 equally likely outcomes."
+    },
+    {
+      "id": 19,
+      "difficulty": "hard",
+      "topic": "Factors and Multiples",
+      "question": "A teacher wants to arrange 30 students into equal rows with no students left over. Which of these row counts is NOT possible?",
+      "options": ["3", "5", "6", "8"],
+      "answer": "8",
+      "explanation": "30 is divisible by 3, 5, and 6, but not by 8."
+    },
+    {
+      "id": 20,
+      "difficulty": "medium",
+      "topic": "Fractions (operations)",
+      "question": "What is 7/10 - 3/10?",
+      "options": ["4/10", "4/20", "3/10", "1/2"],
+      "answer": "4/10",
+      "explanation": "Subtract the numerators: 7/10 - 3/10 = 4/10."
+    },
+    {
+      "id": 21,
+      "difficulty": "medium",
+      "topic": "Fundamental Counting Principle",
+      "question": "A game avatar can use 3 hairstyles, 4 shirts, and 2 pairs of shoes. How many different avatars can be made?",
+      "options": ["9", "12", "24", "36"],
+      "answer": "24",
+      "explanation": "Multiply the choices for each category: 3 × 4 × 2 = 24."
+    },
+    {
+      "id": 22,
+      "difficulty": "hard",
+      "topic": "Basic Probability",
+      "question": "A box has 12 tiles: 5 circles, 4 squares, and 3 triangles. What is the probability of picking a shape that is NOT a circle?",
+      "options": ["5/12", "7/12", "1/2", "2/3"],
+      "answer": "7/12",
+      "explanation": "Not a circle means square or triangle. There are 4 + 3 = 7 such tiles out of 12."
+    },
+    {
+      "id": 23,
+      "difficulty": "easy",
+      "topic": "Factors and Multiples",
+      "question": "Which number is a multiple of 7?",
+      "options": ["21", "20", "19", "15"],
+      "answer": "21",
+      "explanation": "21 = 7 × 3, so it is a multiple of 7."
+    },
+    {
+      "id": 24,
+      "difficulty": "medium",
+      "topic": "Fractions (operations)",
+      "question": "What is 1/2 + 1/4?",
+      "options": ["2/6", "3/4", "1/6", "2/4"],
+      "answer": "3/4",
+      "explanation": "Change 1/2 to 2/4, then add: 2/4 + 1/4 = 3/4."
+    },
+    {
+      "id": 25,
+      "difficulty": "hard",
+      "topic": "Fundamental Counting Principle",
+      "question": "A bookstore display lets customers choose 1 bookmark from 6 designs, 1 notebook from 3 colors, and 1 pen from 5 styles. How many different sets can be made?",
+      "options": ["14", "30", "60", "90"],
+      "answer": "90",
+      "explanation": "Multiply the number of choices: 6 × 3 × 5 = 90 sets."
+    },
+    {
+      "id": 26,
+      "difficulty": "medium",
+      "topic": "Basic Probability",
+      "question": "A card is chosen from cards numbered 1 through 9. What is the probability of choosing an even number?",
+      "options": ["4/9", "5/9", "1/2", "2/9"],
+      "answer": "4/9",
+      "explanation": "The even numbers are 2, 4, 6, and 8. That is 4 favorable outcomes out of 9."
+    },
+    {
+      "id": 27,
+      "difficulty": "medium",
+      "topic": "Factors and Multiples",
+      "question": "What is the greatest common factor of 12 and 18?",
+      "options": ["2", "3", "6", "9"],
+      "answer": "6",
+      "explanation": "The common factors are 1, 2, 3, and 6. The greatest is 6."
+    },
+    {
+      "id": 28,
+      "difficulty": "hard",
+      "topic": "Fractions (operations)",
+      "question": "Lena walked 3/5 mile in the morning and 1/10 mile in the evening. How far did she walk in all?",
+      "options": ["4/15 mile", "7/10 mile", "2/5 mile", "4/10 mile"],
+      "answer": "7/10 mile",
+      "explanation": "Change 3/5 to 6/10, then add: 6/10 + 1/10 = 7/10."
+    },
+    {
+      "id": 29,
+      "difficulty": "easy",
+      "topic": "Fundamental Counting Principle",
+      "question": "A child can pick 2 juices and 2 snacks. How many juice-and-snack pairs are possible?",
+      "options": ["2", "4", "6", "8"],
+      "answer": "4",
+      "explanation": "Multiply the choices: 2 × 2 = 4 pairs."
+    },
+    {
+      "id": 30,
+      "difficulty": "medium",
+      "topic": "Basic Probability",
+      "question": "A spinner has 10 equal spaces. 1 space says 'Win'. What is the probability of winning in one spin?",
+      "options": ["1/10", "1/5", "9/10", "10/1"],
+      "answer": "1/10",
+      "explanation": "There is 1 winning space out of 10 equal spaces."
+    },
+    {
+      "id": 31,
+      "difficulty": "hard",
+      "topic": "Factors and Multiples",
+      "question": "The school bell rings every 6 minutes, and the library reminder chimes every 8 minutes. If they ring together now, after how many minutes will they ring together again?",
+      "options": ["14", "24", "36", "48"],
+      "answer": "24",
+      "explanation": "Find the least common multiple of 6 and 8. The LCM is 24."
+    },
+    {
+      "id": 32,
+      "difficulty": "medium",
+      "topic": "Fractions (operations)",
+      "question": "What is 3/4 - 1/8?",
+      "options": ["2/8", "5/8", "1/2", "3/8"],
+      "answer": "5/8",
+      "explanation": "Change 3/4 to 6/8, then subtract: 6/8 - 1/8 = 5/8."
+    },
+    {
+      "id": 33,
+      "difficulty": "medium",
+      "topic": "Fundamental Counting Principle",
+      "question": "A pizza shop offers 3 crusts, 2 sauces, and 4 toppings choices for a one-topping pizza. How many different pizzas can be made?",
+      "options": ["9", "18", "24", "36"],
+      "answer": "24",
+      "explanation": "Multiply the choices: 3 × 2 × 4 = 24 pizzas."
+    },
+    {
+      "id": 34,
+      "difficulty": "easy",
+      "topic": "Basic Probability",
+      "question": "A bag has 9 white beads and 1 black bead. What is the probability of drawing the black bead?",
+      "options": ["1/10", "9/10", "1/9", "10/10"],
+      "answer": "1/10",
+      "explanation": "There are 10 beads total, and 1 is black."
+    },
+    {
+      "id": 35,
+      "difficulty": "medium",
+      "topic": "Factors and Multiples",
+      "question": "Which pair of numbers both have 24 as a multiple?",
+      "options": ["3 and 8", "5 and 7", "6 and 7", "10 and 12"],
+      "answer": "3 and 8",
+      "explanation": "24 is divisible by both 3 and 8, so it is a common multiple of those numbers."
+    },
+    {
+      "id": 36,
+      "difficulty": "hard",
+      "topic": "Fractions (operations)",
+      "question": "A ribbon is 1 meter long. If 3/8 meter is used for one craft and 1/4 meter for another, how much ribbon is used in total?",
+      "options": ["5/8 meter", "4/12 meter", "1/2 meter", "7/8 meter"],
+      "answer": "5/8 meter",
+      "explanation": "Change 1/4 to 2/8, then add: 3/8 + 2/8 = 5/8."
+    },
+    {
+      "id": 37,
+      "difficulty": "hard",
+      "topic": "Fundamental Counting Principle",
+      "question": "A bicycle can be ordered in 4 frame colors, 3 seat styles, 2 basket options, and 2 bell options. How many different bicycles can be designed?",
+      "options": ["24", "36", "48", "72"],
+      "answer": "48",
+      "explanation": "Multiply all categories: 4 × 3 × 2 × 2 = 48 designs."
+    },
+    {
+      "id": 38,
+      "difficulty": "hard",
+      "topic": "Basic Probability",
+      "question": "A number cube is rolled once. What is the probability of getting a number greater than 4?",
+      "options": ["1/6", "1/3", "1/2", "2/3"],
+      "answer": "1/3",
+      "explanation": "Numbers greater than 4 are 5 and 6. That is 2 outcomes out of 6, or 1/3."
+    },
+    {
+      "id": 39,
+      "difficulty": "easy",
+      "topic": "Factors and Multiples",
+      "question": "Which number is NOT a factor of 20?",
+      "options": ["2", "4", "5", "6"],
+      "answer": "6",
+      "explanation": "20 ÷ 6 does not make a whole number, so 6 is not a factor of 20."
+    },
+    {
+      "id": 40,
+      "difficulty": "medium",
+      "topic": "Fractions (operations)",
+      "question": "What is 4/9 + 2/9?",
+      "options": ["6/9", "6/18", "2/3", "5/9"],
+      "answer": "6/9",
+      "explanation": "Add the numerators because the denominators match: 4/9 + 2/9 = 6/9."
+    },
+    {
+      "id": 41,
+      "difficulty": "medium",
+      "topic": "Fundamental Counting Principle",
+      "question": "A music app lets you make a playlist cover by choosing 2 background colors, 5 stickers, and 3 fonts. How many different covers can you create?",
+      "options": ["10", "15", "30", "45"],
+      "answer": "30",
+      "explanation": "Multiply the choices: 2 × 5 × 3 = 30 covers."
+    },
+    {
+      "id": 42,
+      "difficulty": "medium",
+      "topic": "Basic Probability",
+      "question": "A bag has 2 red cubes, 2 blue cubes, and 6 green cubes. What is the probability of drawing a cube that is red or blue?",
+      "options": ["2/10", "4/10", "6/10", "8/10"],
+      "answer": "4/10",
+      "explanation": "Red or blue cubes total 2 + 2 = 4. There are 10 cubes altogether."
+    },
+    {
+      "id": 43,
+      "difficulty": "hard",
+      "topic": "Factors and Multiples",
+      "question": "Which statement is true about the numbers 9 and 12?",
+      "options": ["Their greatest common factor is 6.", "Their least common multiple is 18.", "Their greatest common factor is 3.", "12 is a factor of 9."],
+      "answer": "Their greatest common factor is 3.",
+      "explanation": "The common factors of 9 and 12 are 1 and 3, so the greatest common factor is 3."
+    },
+    {
+      "id": 44,
+      "difficulty": "hard",
+      "topic": "Fractions (operations)",
+      "question": "Noah drank 2/3 of a bottle of water before recess and 1/6 after recess. How much water did he drink altogether?",
+      "options": ["3/9", "5/6", "1/2", "4/6"],
+      "answer": "5/6",
+      "explanation": "Change 2/3 to 4/6, then add: 4/6 + 1/6 = 5/6."
+    },
+    {
+      "id": 45,
+      "difficulty": "easy",
+      "topic": "Fundamental Counting Principle",
+      "question": "A toy robot comes with 3 head styles and 2 body styles. How many different robots can be built?",
+      "options": ["5", "6", "8", "9"],
+      "answer": "6",
+      "explanation": "Multiply the choices: 3 × 2 = 6 robots."
+    },
+    {
+      "id": 46,
+      "difficulty": "easy",
+      "topic": "Basic Probability",
+      "question": "If you choose one day at random from a weekend, what is the probability it is Saturday?",
+      "options": ["1/4", "1/3", "1/2", "1"],
+      "answer": "1/2",
+      "explanation": "A weekend has 2 days, and 1 of them is Saturday."
+    },
+    {
+      "id": 47,
+      "difficulty": "medium",
+      "topic": "Factors and Multiples",
+      "question": "Which number has exactly three factors?",
+      "options": ["4", "6", "8", "10"],
+      "answer": "4",
+      "explanation": "The factors of 4 are 1, 2, and 4. That makes exactly three factors."
+    },
+    {
+      "id": 48,
+      "difficulty": "hard",
+      "topic": "Fractions (operations)",
+      "question": "What is 5/12 - 1/6?",
+      "options": ["4/6", "3/12", "1/4", "1/3"],
+      "answer": "1/4",
+      "explanation": "Change 1/6 to 2/12, then subtract: 5/12 - 2/12 = 3/12 = 1/4."
+    },
+    {
+      "id": 49,
+      "difficulty": "hard",
+      "topic": "Fundamental Counting Principle",
+      "question": "For a school fair ticket, a student chooses 1 entry time from 4 choices, 1 activity from 5 choices, and 1 snack from 3 choices. How many different ticket plans are possible?",
+      "options": ["20", "40", "60", "80"],
+      "answer": "60",
+      "explanation": "Multiply the choices: 4 × 5 × 3 = 60 plans."
+    },
+    {
+      "id": 50,
+      "difficulty": "medium",
+      "topic": "Basic Probability",
+      "question": "A fish tank has 7 goldfish and 5 angelfish. What is the probability of choosing a goldfish at random?",
+      "options": ["5/12", "7/12", "1/2", "7/5"],
+      "answer": "7/12",
+      "explanation": "There are 12 fish total, and 7 of them are goldfish."
+    }
+  ]
+}
