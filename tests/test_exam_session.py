@@ -1,6 +1,15 @@
 import pytest
 
-from exam_session import ExamSessionError, ExamSessionStore
+from exam_session import (
+    ExamSessionError,
+    ExamSessionStore,
+    answer_exam_question,
+    get_exam_session,
+    next_exam_question,
+    previous_exam_question,
+    start_exam_session,
+    submit_exam_session,
+)
 
 
 QUESTIONS = [
@@ -37,6 +46,8 @@ def test_start_exam_randomizes_questions_and_hides_answers_until_submission():
     assert session["total_questions"] == 2
     assert session["answered_questions"] == 0
     assert session["score"] is None
+    assert session["can_submit"] is False
+    assert session["current_question"]["id"] == session["questions"][0]["id"]
     assert all("correct_answer_index" not in question for question in session["questions"])
     assert [question["id"] for question in session["questions"]] == ["q2", "q1"]
 
@@ -52,6 +63,7 @@ def test_navigation_and_answering_updates_session_state():
 
     moved_next = store.go_next(session_id)
     assert moved_next["current_index"] == 1
+    assert moved_next["current_question"]["index"] == 1
 
     moved_previous = store.go_previous(session_id)
     assert moved_previous["current_index"] == 0
@@ -71,9 +83,25 @@ def test_submit_requires_all_questions_answered_and_returns_score_with_answers()
 
     assert submitted["status"] == "submitted"
     assert submitted["complete"] is True
+    assert submitted["can_submit"] is True
     assert submitted["score"] == {"correct": 2, "total": 2, "percentage": 100.0}
     assert all("correct_answer_index" in question for question in submitted["questions"])
     assert submitted["questions"][0]["explanation"] == "Paris is the capital of France."
+
+
+def test_get_session_after_submission_keeps_review_data_visible():
+    store = ExamSessionStore()
+    session_id = store.create_session(QUESTIONS, exam_size=2, seed=7)["session_id"]
+
+    store.answer_question(session_id, 0, 0)
+    store.answer_question(session_id, 1, 1)
+    store.submit_session(session_id)
+
+    reviewed = store.get_session(session_id)
+
+    assert reviewed["status"] == "submitted"
+    assert reviewed["score"] == {"correct": 2, "total": 2, "percentage": 100.0}
+    assert all("correct_answer_index" in question for question in reviewed["questions"])
 
 
 @pytest.mark.parametrize(
@@ -89,3 +117,26 @@ def test_invalid_operations_raise_errors(operation, message):
 
     with pytest.raises(ExamSessionError, match=message):
         operation(store, session_id)
+
+
+def test_function_endpoints_delegate_to_store_operations():
+    store = ExamSessionStore()
+
+    session = start_exam_session(QUESTIONS, exam_size=2, seed=7, store=store)
+    session_id = session["session_id"]
+
+    first_answer = answer_exam_question(session_id, 0, 0, store=store)
+    assert first_answer["answered_questions"] == 1
+
+    navigated = next_exam_question(session_id, store=store)
+    assert navigated["current_index"] == 1
+
+    navigated = previous_exam_question(session_id, store=store)
+    assert navigated["current_index"] == 0
+
+    answer_exam_question(session_id, 1, 1, store=store)
+    submitted = submit_exam_session(session_id, store=store)
+    fetched = get_exam_session(session_id, store=store)
+
+    assert submitted["score"]["correct"] == 2
+    assert fetched["questions"][0]["correct_answer_index"] == 0

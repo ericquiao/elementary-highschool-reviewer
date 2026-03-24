@@ -15,18 +15,29 @@ class ExamSessionStore:
     def __init__(self) -> None:
         self._sessions: Dict[str, Dict[str, Any]] = {}
 
-    def create_session(self, questions: List[Dict[str, Any]], exam_size: Optional[int] = None, *, seed: Optional[int] = None) -> Dict[str, Any]:
+    def create_session(
+        self,
+        questions: List[Dict[str, Any]],
+        exam_size: Optional[int] = None,
+        *,
+        seed: Optional[int] = None,
+    ) -> Dict[str, Any]:
         if not questions:
             raise ExamSessionError("Cannot start an exam without questions.")
 
-        normalized_questions = [normalize_question(question, index) for index, question in enumerate(questions)]
+        normalized_questions = [
+            normalize_question(question, index)
+            for index, question in enumerate(questions)
+        ]
         total_available = len(normalized_questions)
         total_questions = total_available if exam_size is None else exam_size
 
         if total_questions <= 0:
             raise ExamSessionError("Exam size must be greater than zero.")
         if total_questions > total_available:
-            raise ExamSessionError("Exam size cannot exceed the number of available questions.")
+            raise ExamSessionError(
+                "Exam size cannot exceed the number of available questions."
+            )
 
         rng = random.Random(seed)
         selected_questions = rng.sample(normalized_questions, total_questions)
@@ -47,9 +58,14 @@ class ExamSessionStore:
 
     def get_session(self, session_id: str) -> Dict[str, Any]:
         session = self._require_session(session_id)
-        return build_session_payload(session)
+        return build_session_payload(session, include_answers=session["submitted"])
 
-    def answer_question(self, session_id: str, question_index: int, selected_index: int) -> Dict[str, Any]:
+    def answer_question(
+        self,
+        session_id: str,
+        question_index: int,
+        selected_index: int,
+    ) -> Dict[str, Any]:
         session = self._require_open_session(session_id)
         question = self._require_question(session, question_index)
 
@@ -65,19 +81,21 @@ class ExamSessionStore:
         if session["current_index"] >= len(session["questions"]) - 1:
             raise ExamSessionError("Already at the last question.")
         session["current_index"] += 1
-        return build_session_payload(session)
+        return build_session_payload(session, include_answers=session["submitted"])
 
     def go_previous(self, session_id: str) -> Dict[str, Any]:
         session = self._require_session(session_id)
         if session["current_index"] <= 0:
             raise ExamSessionError("Already at the first question.")
         session["current_index"] -= 1
-        return build_session_payload(session)
+        return build_session_payload(session, include_answers=session["submitted"])
 
     def submit_session(self, session_id: str) -> Dict[str, Any]:
         session = self._require_open_session(session_id)
         if any(answer is None for answer in session["answers"]):
-            raise ExamSessionError("Cannot submit exam until every question has an answer.")
+            raise ExamSessionError(
+                "Cannot submit exam until every question has an answer."
+            )
 
         correct_count = sum(
             1
@@ -106,7 +124,10 @@ class ExamSessionStore:
         return session
 
     @staticmethod
-    def _require_question(session: Dict[str, Any], question_index: int) -> Dict[str, Any]:
+    def _require_question(
+        session: Dict[str, Any],
+        question_index: int,
+    ) -> Dict[str, Any]:
         if not 0 <= question_index < len(session["questions"]):
             raise ExamSessionError("Question index is out of range.")
         return session["questions"][question_index]
@@ -127,13 +148,22 @@ def normalize_question(question: Dict[str, Any], fallback_index: int) -> Dict[st
     return {
         "id": question.get("id") or f"question-{fallback_index}",
         "question": str(question.get("question") or question.get("prompt") or ""),
-        "choices": [choice["text"] if isinstance(choice, dict) and "text" in choice else str(choice) for choice in choices],
+        "choices": [
+            choice["text"]
+            if isinstance(choice, dict) and "text" in choice
+            else str(choice)
+            for choice in choices
+        ],
         "correct_answer_index": correct_index,
         "explanation": str(question.get("explanation") or ""),
     }
 
 
-def build_session_payload(session: Dict[str, Any], *, include_answers: bool = False) -> Dict[str, Any]:
+def build_session_payload(
+    session: Dict[str, Any],
+    *,
+    include_answers: bool = False,
+) -> Dict[str, Any]:
     questions = []
     for index, question in enumerate(session["questions"]):
         payload_question = {
@@ -156,6 +186,71 @@ def build_session_payload(session: Dict[str, Any], *, include_answers: bool = Fa
         "total_questions": len(session["questions"]),
         "answered_questions": answered_count,
         "complete": answered_count == len(session["questions"]),
+        "can_submit": answered_count == len(session["questions"]),
         "score": deepcopy(session["score"]),
         "questions": questions,
+        "current_question": deepcopy(questions[session["current_index"]]),
     }
+
+
+DEFAULT_STORE = ExamSessionStore()
+
+
+def start_exam_session(
+    questions: List[Dict[str, Any]],
+    exam_size: Optional[int] = None,
+    *,
+    seed: Optional[int] = None,
+    store: Optional[ExamSessionStore] = None,
+) -> Dict[str, Any]:
+    return (store or DEFAULT_STORE).create_session(
+        questions,
+        exam_size=exam_size,
+        seed=seed,
+    )
+
+
+def get_exam_session(
+    session_id: str,
+    *,
+    store: Optional[ExamSessionStore] = None,
+) -> Dict[str, Any]:
+    return (store or DEFAULT_STORE).get_session(session_id)
+
+
+def answer_exam_question(
+    session_id: str,
+    question_index: int,
+    selected_index: int,
+    *,
+    store: Optional[ExamSessionStore] = None,
+) -> Dict[str, Any]:
+    return (store or DEFAULT_STORE).answer_question(
+        session_id,
+        question_index,
+        selected_index,
+    )
+
+
+def next_exam_question(
+    session_id: str,
+    *,
+    store: Optional[ExamSessionStore] = None,
+) -> Dict[str, Any]:
+    return (store or DEFAULT_STORE).go_next(session_id)
+
+
+def previous_exam_question(
+    session_id: str,
+    *,
+    store: Optional[ExamSessionStore] = None,
+) -> Dict[str, Any]:
+    return (store or DEFAULT_STORE).go_previous(session_id)
+
+
+def submit_exam_session(
+    session_id: str,
+    *,
+    store: Optional[ExamSessionStore] = None,
+) -> Dict[str, Any]:
+    return (store or DEFAULT_STORE).submit_session(session_id)
