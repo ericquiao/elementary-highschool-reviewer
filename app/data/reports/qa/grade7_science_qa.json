@@ -1,0 +1,12 @@
+{
+  "dataset": "app/data/questions/grade7/science.json",
+  "sample_size": 50,
+  "issues_found": {
+    "answer_integrity": [],
+    "duplicates": [],
+    "difficulty_mismatch": [],
+    "topic_mismatch": [],
+    "ambiguity": []
+  },
+  "quality_score": 100
+}

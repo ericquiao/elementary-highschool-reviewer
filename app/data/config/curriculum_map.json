@@ -1,0 +1,6 @@
+{
+  "grade5": ["Math", "Science", "English"],
+  "grade6": ["Math", "Science", "English"],
+  "grade7": ["Math", "Science"],
+  "grade8": ["Math", "Science"]
+}

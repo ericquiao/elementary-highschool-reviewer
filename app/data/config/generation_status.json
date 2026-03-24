@@ -1,0 +1,20 @@
+{
+  "grade5": {
+    "Math": "complete",
+    "Science": "complete",
+    "English": "complete"
+  },
+  "grade6": {
+    "Math": "complete",
+    "Science": "complete",
+    "English": "complete"
+  },
+  "grade7": {
+    "Math": "complete",
+    "Science": "complete"
+  },
+  "grade8": {
+    "Math": "complete",
+    "Science": "complete"
+  }
+}

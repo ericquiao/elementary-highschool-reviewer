@@ -1,0 +1,39 @@
+{
+  "dataset_size": 1250,
+  "json_validity": "passed",
+  "required_fields_check": "passed",
+  "choices_check": "passed",
+  "difficulty_distribution": {
+    "easy": 625,
+    "medium": 375,
+    "hard": 250
+  },
+  "bucket_distribution": {
+    "1": 63,
+    "2": 63,
+    "3": 63,
+    "4": 63,
+    "5": 63,
+    "6": 63,
+    "7": 63,
+    "8": 63,
+    "9": 63,
+    "10": 63,
+    "11": 62,
+    "12": 62,
+    "13": 62,
+    "14": 62,
+    "15": 62,
+    "16": 62,
+    "17": 62,
+    "18": 62,
+    "19": 62,
+    "20": 62
+  },
+  "topic_count": 25,
+  "duplicate_check": {
+    "status": "passed",
+    "duplicate_question_count": 0
+  },
+  "validation_passed": true
+}

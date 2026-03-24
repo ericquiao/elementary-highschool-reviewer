@@ -1,0 +1,10 @@
+{
+  "questions_per_topic": 50,
+  "difficulty_distribution": {
+    "easy": 50,
+    "medium": 30,
+    "hard": 20
+  },
+  "choices_per_question": 4,
+  "bucket_count": 20
+}

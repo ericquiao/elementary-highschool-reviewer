@@ -1,0 +1,42 @@
+## Scope Lock
+- Features included:
+  - One local student-facing review flow with no authentication.
+  - Two input methods for the Core POC: text question input and one image input per request.
+  - Frontend support for image upload and camera capture.
+  - Backend processing through a current Gemini Flash multimodal model.
+  - Automatic response containing detected subject, detected topic, short structured explanation, and a 10-question multiple choice quiz.
+  - Explanation style optimized for Grades 3-10 using short bullet points, simple language, and a simple example when possible.
+  - Testing against 5-7 real study images across subjects such as Math, Science, English, MAPEH, Araling Panlipunan, and TLE.
+  - Local filesystem storage for uploaded images during POC testing.
+  - Optional lightweight SQLite usage only if needed for simple request logging during the POC.
+- Features excluded:
+  - Authentication of any kind, including Google OAuth and email/password.
+  - Free-tier usage limits.
+  - Dashboards, parent monitoring, teacher accounts, and gamification.
+  - PDF, DOC, and PPT uploads.
+  - Multiple-image requests.
+  - Manual subject selection as a required user step for the Core POC.
+  - Study session tracking, analytics, and activity history.
+  - Advanced editing of explanations or quiz settings beyond the locked response format.
+- Assumptions:
+  - The core idea can be validated without login, quotas, or persistent student accounts.
+  - Gemini multimodal input can infer subject and topic well enough from both text questions and real study images.
+  - Returning both explanation and quiz in one response is a better POC test than making students choose one output path first.
+  - Camera capture can be treated as an image input path, not a separate AI workflow.
+  - One uploaded image per request is sufficient to test whether image-based review is viable.
+- Mocked integrations:
+  - No mocked AI integration in the Core POC; the Gemini multimodal API is a real dependency because it is the capability being validated.
+  - No real authentication integration.
+  - No payment, billing, or quota integration.
+  - Local filesystem acts as the upload storage layer for POC testing.
+- Acceptance criteria:
+  - A tester can submit a text question and receive detected subject, detected topic, a short structured explanation, and a 10-question multiple choice quiz.
+  - A tester can upload or capture one study image and receive detected subject, detected topic, a short structured explanation, and a 10-question multiple choice quiz.
+  - Most of the 5-7 test images are interpreted correctly enough that the detected topic is useful for review.
+  - The explanation is understandable for Grades 3-10 and includes simple, structured wording.
+  - The generated quiz is usable for review and mostly aligned with the detected topic.
+  - The full interaction works locally without adding excluded features.
+
+## Next Stage Readiness
+- Ready to proceed when the builder accepts that the Core POC is limited to validating the text-and-image review pipeline only.
+- The next stage should focus on architecture and build planning for this locked scope only, without reintroducing authentication, quotas, dashboards, or document uploads.
