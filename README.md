@@ -16,6 +16,15 @@ Small CLI utility that cleans a JSON array of multiple-choice questions.
 python3 validator.py < questions.json
 ```
 
+## Review Mode Functions
+
+`review_mode.py` provides reusable review-session helpers for apps or API layers:
+
+- `start_review_session(questions)` initializes a session.
+- `get_current_question(session)` returns exactly one question at a time.
+- `submit_review_answer(session, selected_index)` returns immediate correct/incorrect feedback, the explanation, and the updated score.
+- `review_session_summary(session)` returns simple progress and scoring totals.
+
 ## Exam session logic
 
 The repository also includes `exam_session.py`, an in-memory exam-session manager that exposes store methods and thin endpoint-style functions for exam flows. It can:
