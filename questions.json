@@ -1,0 +1,432 @@
+{
+  "grade": "6-7",
+  "subject": "English",
+  "topics": [
+    "Parts of Speech",
+    "Subject-Verb Agreement",
+    "Context Clues",
+    "Basic Reading Comprehension"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "topic": "Parts of Speech",
+      "question": "Which word is a noun in the sentence \"The artist painted a bright mural\"?",
+      "choices": ["painted", "bright", "artist", "a"],
+      "answer": "artist"
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "topic": "Parts of Speech",
+      "question": "Which word is a verb in the sentence \"Birds fly above the trees\"?",
+      "choices": ["Birds", "above", "fly", "trees"],
+      "answer": "fly"
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "topic": "Parts of Speech",
+      "question": "Which word is an adjective in the sentence \"She wore a colorful scarf\"?",
+      "choices": ["wore", "colorful", "she", "a"],
+      "answer": "colorful"
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "topic": "Parts of Speech",
+      "question": "Which word is an adverb in the sentence \"The puppy barked loudly at night\"?",
+      "choices": ["puppy", "barked", "loudly", "night"],
+      "answer": "loudly"
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "topic": "Parts of Speech",
+      "question": "Which word is a pronoun in the sentence \"They finished the project early\"?",
+      "choices": ["finished", "project", "early", "They"],
+      "answer": "They"
+    },
+    {
+      "id": 6,
+      "type": "multiple_choice",
+      "topic": "Parts of Speech",
+      "question": "Which word is a preposition in the sentence \"The keys are under the table\"?",
+      "choices": ["keys", "under", "table", "are"],
+      "answer": "under"
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "topic": "Parts of Speech",
+      "question": "Which word is a conjunction in the sentence \"Mia and Leo studied together\"?",
+      "choices": ["Mia", "and", "studied", "together"],
+      "answer": "and"
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "topic": "Parts of Speech",
+      "question": "Which word is an interjection in the sentence \"Wow! That trick was amazing\"?",
+      "choices": ["That", "amazing", "Wow", "trick"],
+      "answer": "Wow"
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "topic": "Parts of Speech",
+      "question": "In the sentence \"The river flows calmly\", what part of speech is the word \"river\"?",
+      "choices": ["Noun", "Verb", "Adjective", "Adverb"],
+      "answer": "Noun"
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "topic": "Parts of Speech",
+      "question": "In the sentence \"Carlos quickly opened the window\", what part of speech is the word \"quickly\"?",
+      "choices": ["Adjective", "Adverb", "Noun", "Pronoun"],
+      "answer": "Adverb"
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "topic": "Subject-Verb Agreement",
+      "question": "Choose the sentence with correct subject-verb agreement.",
+      "choices": ["The dogs runs in the yard.", "The dogs run in the yard.", "The dogs running in the yard.", "The dogs is running in the yard."],
+      "answer": "The dogs run in the yard."
+    },
+    {
+      "id": 12,
+      "type": "multiple_choice",
+      "topic": "Subject-Verb Agreement",
+      "question": "Choose the correct verb: \"My brother ____ soccer after school.\"",
+      "choices": ["play", "plays", "playing", "have played"],
+      "answer": "plays"
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "topic": "Subject-Verb Agreement",
+      "question": "Choose the correct verb: \"The students ____ ready for the test.\"",
+      "choices": ["is", "was", "are", "has"],
+      "answer": "are"
+    },
+    {
+      "id": 14,
+      "type": "multiple_choice",
+      "topic": "Subject-Verb Agreement",
+      "question": "Which sentence is correct?",
+      "choices": ["Each of the players have a uniform.", "Each of the players has a uniform.", "Each of the players are wearing a uniform.", "Each of the players need a uniform."],
+      "answer": "Each of the players has a uniform."
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "topic": "Subject-Verb Agreement",
+      "question": "Choose the correct verb: \"Neither the cat nor the dogs ____ outside.\"",
+      "choices": ["is", "was", "are", "has"],
+      "answer": "are"
+    },
+    {
+      "id": 16,
+      "type": "multiple_choice",
+      "topic": "Subject-Verb Agreement",
+      "question": "Choose the sentence with correct subject-verb agreement.",
+      "choices": ["There is many books on the shelf.", "There are many books on the shelf.", "There was many books on the shelf.", "There be many books on the shelf."],
+      "answer": "There are many books on the shelf."
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "topic": "Subject-Verb Agreement",
+      "question": "Choose the correct verb: \"A basket of apples ____ on the table.\"",
+      "choices": ["sit", "are", "sits", "were"],
+      "answer": "sits"
+    },
+    {
+      "id": 18,
+      "type": "multiple_choice",
+      "topic": "Subject-Verb Agreement",
+      "question": "Which sentence is correct?",
+      "choices": ["The team are winning the game.", "The team is winning the game.", "The team wining the game.", "The team have winning the game."],
+      "answer": "The team is winning the game."
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "topic": "Subject-Verb Agreement",
+      "question": "Choose the correct verb: \"One of the cookies ____ missing.\"",
+      "choices": ["are", "were", "is", "be"],
+      "answer": "is"
+    },
+    {
+      "id": 20,
+      "type": "multiple_choice",
+      "topic": "Subject-Verb Agreement",
+      "question": "Choose the correct verb: \"The teacher and the principal ____ meeting today.\"",
+      "choices": ["is", "are", "was", "has"],
+      "answer": "are"
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "topic": "Context Clues",
+      "question": "In the sentence \"The desert was arid, with almost no rain for months\", what does \"arid\" mean?",
+      "choices": ["Very dry", "Very crowded", "Very cold", "Very noisy"],
+      "answer": "Very dry"
+    },
+    {
+      "id": 22,
+      "type": "multiple_choice",
+      "topic": "Context Clues",
+      "question": "In the sentence \"Lena felt gloomy after the picnic was canceled, but she cheered up later\", what does \"gloomy\" mean?",
+      "choices": ["Hungry", "Sad", "Excited", "Curious"],
+      "answer": "Sad"
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "topic": "Context Clues",
+      "question": "In the sentence \"The kitten was timid and hid behind the couch when guests arrived\", what does \"timid\" mean?",
+      "choices": ["Brave", "Shy", "Playful", "Wild"],
+      "answer": "Shy"
+    },
+    {
+      "id": 24,
+      "type": "multiple_choice",
+      "topic": "Context Clues",
+      "question": "In the sentence \"The coach said our victory was possible because the other team looked fatigued and slow\", what does \"fatigued\" mean?",
+      "choices": ["Tired", "Angry", "Organized", "Proud"],
+      "answer": "Tired"
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "topic": "Context Clues",
+      "question": "In the sentence \"Mina gave a brief answer, just two words long\", what does \"brief\" mean?",
+      "choices": ["Long", "Polite", "Short", "Funny"],
+      "answer": "Short"
+    },
+    {
+      "id": 26,
+      "type": "multiple_choice",
+      "topic": "Context Clues",
+      "question": "In the sentence \"The ancient vase was fragile, so everyone handled it with care\", what does \"fragile\" mean?",
+      "choices": ["Expensive", "Breakable", "Colorful", "Heavy"],
+      "answer": "Breakable"
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "topic": "Context Clues",
+      "question": "In the sentence \"The children were eager to open their gifts and could hardly wait\", what does \"eager\" mean?",
+      "choices": ["Sleepy", "Ready and excited", "Upset", "Confused"],
+      "answer": "Ready and excited"
+    },
+    {
+      "id": 28,
+      "type": "multiple_choice",
+      "topic": "Context Clues",
+      "question": "In the sentence \"After walking for miles, we were relieved to find a tiny cabin that offered shelter\", what does \"shelter\" mean?",
+      "choices": ["A place of safety", "A type of snack", "A noisy machine", "A fast road"],
+      "answer": "A place of safety"
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "topic": "Context Clues",
+      "question": "In the sentence \"Jared's explanation was vague, so no one understood exactly what he meant\", what does \"vague\" mean?",
+      "choices": ["Clear", "Unclear", "Loud", "Truthful"],
+      "answer": "Unclear"
+    },
+    {
+      "id": 30,
+      "type": "multiple_choice",
+      "topic": "Context Clues",
+      "question": "In the sentence \"The path was narrow, so only one person could walk on it at a time\", what does \"narrow\" mean?",
+      "choices": ["Wide", "Smooth", "Thin and not wide", "Steep"],
+      "answer": "Thin and not wide"
+    },
+    {
+      "id": 31,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "Maya planted tomato seeds in a small garden behind her house. Every morning, she watered the soil and checked for sprouts. After two weeks, tiny green stems appeared. Maya smiled because her hard work was paying off.",
+      "question": "Why did Maya smile at the end of the passage?",
+      "choices": ["She found a new garden tool.", "Her seeds began to grow.", "It started to rain.", "She sold tomatoes at the market."],
+      "answer": "Her seeds began to grow."
+    },
+    {
+      "id": 32,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "Maya planted tomato seeds in a small garden behind her house. Every morning, she watered the soil and checked for sprouts. After two weeks, tiny green stems appeared. Maya smiled because her hard work was paying off.",
+      "question": "What did Maya do every morning?",
+      "choices": ["Picked tomatoes", "Built a fence", "Watered the soil and checked for sprouts", "Moved the garden"],
+      "answer": "Watered the soil and checked for sprouts"
+    },
+    {
+      "id": 33,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "During lunch, Evan noticed that his friend Sam was unusually quiet. Sam usually laughed and told jokes, but today he just stared at his sandwich. Evan asked if something was wrong. Sam explained that he had forgotten about a big science project due that afternoon. Evan offered to help him organize his materials before class.",
+      "question": "Why was Sam unusually quiet?",
+      "choices": ["He was sick.", "He was upset about a science project.", "He was angry with Evan.", "He lost his lunch."],
+      "answer": "He was upset about a science project."
+    },
+    {
+      "id": 34,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "During lunch, Evan noticed that his friend Sam was unusually quiet. Sam usually laughed and told jokes, but today he just stared at his sandwich. Evan asked if something was wrong. Sam explained that he had forgotten about a big science project due that afternoon. Evan offered to help him organize his materials before class.",
+      "question": "What does Evan's action show about him?",
+      "choices": ["He is impatient.", "He is helpful.", "He is careless.", "He is confused."],
+      "answer": "He is helpful."
+    },
+    {
+      "id": 35,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "The school library announced a weekend reading challenge. Students who read for at least three hours would receive a bookmark and have their names posted on the bulletin board. Priya loved mysteries, so she borrowed two novels on Friday. By Sunday evening, she had finished both books and written short notes about her favorite characters.",
+      "question": "Why did Priya borrow two novels?",
+      "choices": ["She wanted to donate them.", "She needed them for science class.", "She wanted to take part in the reading challenge.", "She was told to replace lost books."],
+      "answer": "She wanted to take part in the reading challenge."
+    },
+    {
+      "id": 36,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "The school library announced a weekend reading challenge. Students who read for at least three hours would receive a bookmark and have their names posted on the bulletin board. Priya loved mysteries, so she borrowed two novels on Friday. By Sunday evening, she had finished both books and written short notes about her favorite characters.",
+      "question": "Which detail best shows that Priya enjoyed the books?",
+      "choices": ["She went to the cafeteria.", "She wrote notes about her favorite characters.", "She returned the books on Monday.", "She read only one page."],
+      "answer": "She wrote notes about her favorite characters."
+    },
+    {
+      "id": 37,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "Mr. Lee's class built paper bridges during science period. The goal was to create a bridge strong enough to hold a stack of coins. Some bridges bent right away, but Sofia's design stayed firm. Her group had folded the paper into triangles, which made the bridge stronger.",
+      "question": "What was the goal of the activity?",
+      "choices": ["To draw coins", "To make the tallest tower", "To create a bridge that could hold coins", "To race across the classroom"],
+      "answer": "To create a bridge that could hold coins"
+    },
+    {
+      "id": 38,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "Mr. Lee's class built paper bridges during science period. The goal was to create a bridge strong enough to hold a stack of coins. Some bridges bent right away, but Sofia's design stayed firm. Her group had folded the paper into triangles, which made the bridge stronger.",
+      "question": "Why was Sofia's bridge successful?",
+      "choices": ["She used metal instead of paper.", "She taped coins to the desk.", "Her group folded the paper into triangles.", "She made the bridge very short."],
+      "answer": "Her group folded the paper into triangles."
+    },
+    {
+      "id": 39,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "On Saturday morning, Luis planned to ride his bike to the park. Dark clouds gathered, and soon rain began to fall. Instead of feeling disappointed, Luis brought out his paints and spent the afternoon creating a picture of the storm from his window.",
+      "question": "Why did Luis change his plans?",
+      "choices": ["His bike was broken.", "The park was closed for repairs.", "It started to rain.", "His friend called him inside."],
+      "answer": "It started to rain."
+    },
+    {
+      "id": 40,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "On Saturday morning, Luis planned to ride his bike to the park. Dark clouds gathered, and soon rain began to fall. Instead of feeling disappointed, Luis brought out his paints and spent the afternoon creating a picture of the storm from his window.",
+      "question": "What can the reader infer about Luis?",
+      "choices": ["He gets bored easily.", "He knows how to adapt when plans change.", "He dislikes art projects.", "He is afraid of storms."],
+      "answer": "He knows how to adapt when plans change."
+    },
+    {
+      "id": 41,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "Nora's class was collecting canned food for a community pantry. At first, the box near the classroom door was nearly empty. Nora made colorful posters and asked the principal if she could speak during morning announcements. By the end of the week, the box was overflowing, and the class had to bring in a second one.",
+      "question": "What problem did Nora notice at first?",
+      "choices": ["The posters were missing.", "The pantry was closed.", "Not many canned foods had been donated.", "The class lost the collection box."],
+      "answer": "Not many canned foods had been donated."
+    },
+    {
+      "id": 42,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "Nora's class was collecting canned food for a community pantry. At first, the box near the classroom door was nearly empty. Nora made colorful posters and asked the principal if she could speak during morning announcements. By the end of the week, the box was overflowing, and the class had to bring in a second one.",
+      "question": "Which action helped increase donations?",
+      "choices": ["Nora hid the box in the classroom.", "Nora made posters and spoke during announcements.", "The class stopped collecting food.", "The principal canceled the project."],
+      "answer": "Nora made posters and spoke during announcements."
+    },
+    {
+      "id": 43,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "Tariq had never baked bread before, but he wanted to surprise his grandmother. He carefully measured the flour, yeast, and water. When the dough did not rise, he reread the recipe and realized he had used cold water instead of warm water. On his second try, the dough doubled in size, and the kitchen smelled wonderful.",
+      "question": "Why did Tariq's first batch of dough fail to rise?",
+      "choices": ["He forgot the flour.", "He used cold water.", "He baked it too long.", "He added too much sugar."],
+      "answer": "He used cold water."
+    },
+    {
+      "id": 44,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "Tariq had never baked bread before, but he wanted to surprise his grandmother. He carefully measured the flour, yeast, and water. When the dough did not rise, he reread the recipe and realized he had used cold water instead of warm water. On his second try, the dough doubled in size, and the kitchen smelled wonderful.",
+      "question": "What lesson did Tariq likely learn?",
+      "choices": ["Recipes should be ignored.", "Cold water always works best.", "Carefully following directions is important.", "Bread cannot be made at home."],
+      "answer": "Carefully following directions is important."
+    },
+    {
+      "id": 45,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "For the class talent show, Alina wanted to play the violin. She was nervous because she had only performed in front of her family before. Each evening, she practiced the song slowly and then a little faster. On the night of the show, she took a deep breath, stepped onto the stage, and played without missing a note.",
+      "question": "How did Alina prepare for the talent show?",
+      "choices": ["She practiced every evening.", "She bought a new violin that day.", "She asked someone else to perform.", "She skipped rehearsal."],
+      "answer": "She practiced every evening."
+    },
+    {
+      "id": 46,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "For the class talent show, Alina wanted to play the violin. She was nervous because she had only performed in front of her family before. Each evening, she practiced the song slowly and then a little faster. On the night of the show, she took a deep breath, stepped onto the stage, and played without missing a note.",
+      "question": "What is the best main idea of the passage?",
+      "choices": ["Alina forgot her song on stage.", "Practice helped Alina perform confidently.", "Talent shows should be canceled.", "Violin is the easiest instrument to learn."],
+      "answer": "Practice helped Alina perform confidently."
+    },
+    {
+      "id": 47,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "The city park added a butterfly garden near the pond. Volunteers planted flowers that bloom in spring and summer. Soon, families began visiting the garden to watch butterflies rest on the petals. Signs beside the path explained how the plants provide food for caterpillars and butterflies.",
+      "question": "Why did families visit the butterfly garden?",
+      "choices": ["To go fishing in the pond.", "To watch butterflies in the flowers.", "To buy seeds from volunteers.", "To build a new path."],
+      "answer": "To watch butterflies in the flowers."
+    },
+    {
+      "id": 48,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "The city park added a butterfly garden near the pond. Volunteers planted flowers that bloom in spring and summer. Soon, families began visiting the garden to watch butterflies rest on the petals. Signs beside the path explained how the plants provide food for caterpillars and butterflies.",
+      "question": "What do the signs beside the path explain?",
+      "choices": ["How to catch butterflies", "Why the pond is being cleaned", "How the plants help caterpillars and butterflies", "When the park closes each day"],
+      "answer": "How the plants help caterpillars and butterflies"
+    },
+    {
+      "id": 49,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "Zoe and her cousin were building a puzzle on a rainy afternoon. At first, they searched for edge pieces and sorted colors into small piles. The sky section was difficult because many pieces looked alike, but they kept trying. After an hour, they snapped in the last piece and cheered.",
+      "question": "What challenge did Zoe and her cousin face?",
+      "choices": ["They lost the puzzle box.", "The sky section had many similar pieces.", "They did not have enough table space.", "The puzzle was missing all the edge pieces."],
+      "answer": "The sky section had many similar pieces."
+    },
+    {
+      "id": 50,
+      "type": "multiple_choice",
+      "topic": "Basic Reading Comprehension",
+      "passage": "Zoe and her cousin were building a puzzle on a rainy afternoon. At first, they searched for edge pieces and sorted colors into small piles. The sky section was difficult because many pieces looked alike, but they kept trying. After an hour, they snapped in the last piece and cheered.",
+      "question": "Which word best describes Zoe and her cousin?",
+      "choices": ["Lazy", "Patient", "Careless", "Silent"],
+      "answer": "Patient"
+    }
+  ]
+}

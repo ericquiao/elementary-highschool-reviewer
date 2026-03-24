@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementary & High School Reviewer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Simple reviewer</p>
+          <h1>Study faster with review and exam modes.</h1>
+          <p class="subcopy">Pick a grade, subject, and mode, then answer directly from the browser.</p>
+        </div>
+      </header>
+
+      <section id="home-page" class="page active card"></section>
+      <section id="review-page" class="page card"></section>
+      <section id="exam-page" class="page card"></section>
+      <section id="result-page" class="page card"></section>
+    </main>
+
+    <template id="question-template">
+      <article class="question-card">
+        <div class="question-meta">
+          <span class="chip topic"></span>
+          <span class="chip index"></span>
+        </div>
+        <h3 class="question-text"></h3>
+        <div class="choices"></div>
+        <div class="review-feedback hidden"></div>
+      </article>
+    </template>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
