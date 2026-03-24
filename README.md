@@ -32,6 +32,21 @@ Then open <http://127.0.0.1:8000>.
 python3 validator.py < questions.json
 ```
 
+## Pipeline
+
+To run the full pipeline end-to-end:
+
+```bash
+python3 pipeline.py
+```
+
+The pipeline will:
+1. Load raw JSON from `questions.json`.
+2. Validate and clean each question.
+3. Process the cleaned questions.
+4. Save the final dataset to `clean_questions.json`.
+
+It is safe to run repeatedly because it always rewrites `clean_questions.json` and removes duplicate questions from the final dataset.
 ### Processor
 
 ```bash
